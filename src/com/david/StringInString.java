@@ -8,8 +8,10 @@ public class StringInString {
     public static void main(String[] args) {
         System.out.println("Please enter your first line: ");
         String string1 = SCANNER.nextLine();
+        string1 += " ";
         System.out.println("Please enter your second line: ");
         String string2 = SCANNER.next();
+        string2 += " ";
         int j = 0;
         for (int i = 0; i < string1.length() && j < string2.length() ; i++) {
             if ( string1.charAt(i) == string2.charAt(j) ){
@@ -21,7 +23,7 @@ public class StringInString {
         if ( j == string2.length() ) {
             System.out.println("True");
         } else {
-            System.out.println("FALSE");
+            System.out.println("False");
         }
     }
 
